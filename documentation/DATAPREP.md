@@ -115,13 +115,11 @@ df.collision_severity = (df.collision_severity != 3).astype("int8")
 
 Des filtres supplémentaires sont appliqués pour exclure les données non pertinentes ou inconnues.
 
-  * `df[df.light_conditions.isin([1,4,5,6])]`: Sélectionne "Daylight", "Darkness - lights lit", "Darkness - lights unlit", "Darkness - no lighting".
-  * `df[~df.road_type.isin([9,-1])]`: Exclut "Unknown" et "Data missing".
-  * `df[~df.weather_conditions.isin([8,9,-1])]`: Exclut "Other", "Unknown" et "Data missing".
-  * `df[~df.age_of_vehicle.isin([-1])]`: Exclut "Data missing".
-  * `df[~df.age_of_driver.isin([-1])]`: Exclut "Data missing".
-
-> **Note**: Dans le script fourni, ces filtres sont exécutés sans ré-assigner le DataFrame (ils devraient être écrits `df = df[...]`). Tel quel, le filtrage n'est pas appliqué au DataFrame final.
+  * `df = df[df.light_conditions.isin([1,4,5,6])]`: Sélectionne "Daylight", "Darkness - lights lit", "Darkness - lights unlit", "Darkness - no lighting".
+  * `df = df[~df.road_type.isin([9,-1])]`: Exclut "Unknown" et "Data missing".
+  * `df = df[~df.weather_conditions.isin([8,9,-1])]`: Exclut "Other", "Unknown" et "Data missing".
+  * `df = df[~df.age_of_vehicle.isin([-1])]`: Exclut "Data missing".
+  * `df = df[~df.age_of_driver.isin([-1])]`: Exclut "Data missing".
 
 Enfin, les colonnes devenues inutiles sont supprimées :
 

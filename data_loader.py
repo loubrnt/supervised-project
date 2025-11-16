@@ -58,12 +58,12 @@ df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
 df['day'] = df['date'].dt.day_name()
 df['month'] = df['date'].dt.month
 
-df[df.light_conditions.isin([1,4,5,6])]
-df[~df.road_type.isin([9,-1])]
-df[~df.weather_conditions.isin([8,9,-1])]
-df[~df.age_of_vehicle.isin([-1])]
-df[~df.age_of_driver.isin([-1])]
-df[~df.sex_of_driver.isin([3,-1])]
+df = df[df.light_conditions.isin([1,4,5,6])]
+df = df[~df.road_type.isin([9,-1])]
+df = df[~df.weather_conditions.isin([8,9,-1])]
+df = df[~df.age_of_vehicle.isin([-1])]
+df = df[~df.age_of_driver.isin([-1])]
+df = df[~df.sex_of_driver.isin([3,-1])]
 
 df.collision_severity = (df.collision_severity != 3).astype("int8")
 
