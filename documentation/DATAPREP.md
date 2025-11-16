@@ -47,7 +47,7 @@ Un premier ensemble de filtres est appliqué pour nettoyer le jeu de données fu
   * **Suppression des nuls**: `df.dropna()` retire toutes les lignes contenant au moins une valeur `NaN`.
   * **Filtrage géographique**:
     1.  `df = df[df.local_authority_ons_district != -1]`: Exclut les codes de district manquants ou hors plage.
-    2.  `df = df[df.local_authority_ons_district.apply(lambda x: x[0] == "E")]`: Sélectionne uniquement les districts dont le code commence par "E" (probablement l'Angleterre).
+    2.  `df = df[df.local_authority_ons_district.apply(lambda x: x[0] == "E")]`: Sélectionne uniquement les districts dont le code commence par "E" (England).
   * **Filtrage de zone**: `df = df[df.urban_or_rural_area.isin([1,2])]`: Sélectionne uniquement les zones urbaines (1) et rurales (2), excluant la classe (3) "Unallocated".
 
 -----
