@@ -74,12 +74,13 @@ df = df[~df.weather_conditions.isin([8,9,-1])]
 df = df[~df.age_of_vehicle.isin([-1])]
 df = df[~df.age_of_driver.isin([-1])]
 df = df[~df.sex_of_driver.isin([3,-1])]
+df = df[df.speed_limit.isin([30,60,40,70,50,20])]
 
 df = df[df.age_of_driver>=17]
 df = df[df.age_of_driver<=87]
 
 df = df[df.age_of_vehicle>=0]
-df = df[df.age_of_vehicle<=25]
+df = df[df.age_of_vehicle<=22]
 
 df.speed_limit = df.speed_limit.astype('int8')
 
