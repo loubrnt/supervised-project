@@ -25,7 +25,7 @@ Les données révèlent une tendance très claire en forme de "U". Le risque est
 
 Ce graphique est un "treemap" (carte proportionnelle) qui décompose les accidents par conditions météorologiques et de visibilité.
 
-[test](../pictures/meteo.png)
+![test](../pictures/meteo.png)
 
 **Explication des catégories :**
 * La **taille des rectangles** est proportionnelle au **volume total** d'accidents survenus dans cette condition (la catégorie "Beau temps" de "Jour" est la plus grande).
