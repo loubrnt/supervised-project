@@ -8,7 +8,7 @@ L'objectif de cette analyse est d'explorer visuellement les données pour identi
 
 Ce graphique montre la relation entre l'âge du conducteur et le risque qu'un accident soit grave.
 
-[../pictures/driver_age.png]
+![test](../pictures/driver_age.png)
 
 **Explication des catégories :**
 * L'**axe horizontal (X)** représente l'âge du conducteur, de 18 à 85 ans.
@@ -41,7 +41,7 @@ La grande majorité des accidents survient par **"Beau temps"** et de **"Jour"**
 
 Ce second treemap utilise la même logique pour analyser l'impact de la limite de vitesse et du type de route.
 
-[../pictures/route.png]
+![test](../pictures/route.png)
 
 **Explication des catégories :**
 * La **taille des rectangles** représente le **volume total** d'accidents.
@@ -57,7 +57,7 @@ Le plus grand volume d'accidents a lieu sur les routes à **"Limite : 30 mph"** 
 
 Cette carte de chaleur (heatmap) croise les jours de la semaine avec les mois de l'année pour identifier des tendances temporelles.
 
-[../pictures/seasonality.png]
+![test](../pictures/seasonality.png)
 
 **Explication des catégories :**
 * L'**axe vertical (Y)** liste les jours de la semaine, de Lundi à Dimanche.
@@ -75,7 +75,7 @@ On observe deux tendances très nettes.
 
 Ce dernier graphique est un nuage de points qui montre l'influence de l'âge d'un véhicule sur la gravité d'un accident.
 
-[../pictures/vehicle_age.png]
+![test](../pictures/vehicle_age.png)
 
 **Explication des catégories :**
 * L'**axe horizontal (X)** représente l'**âge du véhicule** en années.
