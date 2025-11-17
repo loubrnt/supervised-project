@@ -4,7 +4,7 @@ L'objectif de cette analyse est d'explorer visuellement les données pour identi
 
 ---
 
-## 👶👴 Gravité par Âge du Conducteur
+## 👴 Gravité par Âge du Conducteur
 
 Ce graphique montre la relation entre l'âge du conducteur et le risque qu'un accident soit grave.
 
@@ -21,7 +21,7 @@ Les données révèlent une tendance très claire en forme de "U". Le risque est
 
 ---
 
-## ☀️🌙 Météo et Visibilité
+## ☀️ Météo et Visibilité
 
 Ce graphique est un "treemap" (carte proportionnelle) qui décompose les accidents par conditions météorologiques et de visibilité.
 
@@ -37,7 +37,7 @@ La grande majorité des accidents survient par **"Beau temps"** et de **"Jour"**
 
 ---
 
-## 🛣️💨 Conditions de Route et Limite de Vitesse
+## 🛣️ Conditions de Route et Limite de Vitesse
 
 Ce second treemap utilise la même logique pour analyser l'impact de la limite de vitesse et du type de route.
 
@@ -53,7 +53,7 @@ Le plus grand volume d'accidents a lieu sur les routes à **"Limite : 30 mph"** 
 
 ---
 
-## 📅☀️ Analyse de Saisonnalité (Jour et Mois)
+## 📅 Analyse de Saisonnalité (Jour et Mois)
 
 Cette carte de chaleur (heatmap) croise les jours de la semaine avec les mois de l'année pour identifier des tendances temporelles.
 
@@ -71,7 +71,7 @@ On observe deux tendances très nettes.
 
 ---
 
-## 🚗💥 Gravité par Âge du Véhicule
+## 🚗 Gravité par Âge du Véhicule
 
 Ce dernier graphique est un nuage de points qui montre l'influence de l'âge d'un véhicule sur la gravité d'un accident.
 
