@@ -75,6 +75,12 @@ df = df[~df.age_of_vehicle.isin([-1])]
 df = df[~df.age_of_driver.isin([-1])]
 df = df[~df.sex_of_driver.isin([3,-1])]
 
+df = df[df.age_of_driver>=17]
+df = df[df.age_of_driver<=87]
+
+df = df[df.age_of_vehicle>=0]
+df = df[df.age_of_vehicle<=25]
+
 df.speed_limit = df.speed_limit.astype('int8')
 
 df.day = df.day.map(day_mapping).astype('int8')
