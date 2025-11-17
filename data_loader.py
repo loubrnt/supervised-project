@@ -33,6 +33,16 @@ df_vehicle = pd.read_csv("data/vehicle.csv", usecols=vehicle_fields, dtype=dtype
 df_collision = pd.read_csv("data/collision.csv", usecols=collision_fields, dtype=dtypes_collision)
 # print(df_collision.info())
 
+day_mapping = {
+    'Monday': 0,
+    'Tuesday': 1,
+    'Wednesday': 2,
+    'Thursday': 3,
+    'Friday': 4,
+    'Saturday': 5,
+    'Sunday': 6
+}
+
 cars = [8, 9, 19, 108, 109, 110]
 motrocycles = [2, 3, 4, 5, 23, 97, 103, 104, 105, 106]
 propulsion_thermique = [1, 2, 5, 6, 7, 9, 10]
@@ -65,7 +75,13 @@ df = df[~df.age_of_vehicle.isin([-1])]
 df = df[~df.age_of_driver.isin([-1])]
 df = df[~df.sex_of_driver.isin([3,-1])]
 
+df.speed_limit = df.speed_limit.astype('int8')
+
+df.day = df.day.map(day_mapping).astype('int8')
+
 df.collision_severity = (df.collision_severity != 3).astype("int8")
+
+df.drop_duplicates()
 
 df = df.drop(columns=["date","collision_index","local_authority_ons_district"])
 
