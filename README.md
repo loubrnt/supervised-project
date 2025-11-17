@@ -25,5 +25,10 @@ Pour ce projet, nous utilisons uniquement les fichiers **`collision.csv`** et **
 
 L'ensemble du processus de chargement, de nettoyage, de filtrage, de fusion et d'ingénierie des variables (feature engineering) est documenté en détail dans le fichier suivant :
 
-**➡️ [Préparation des Données](documentation/DATAPREP.md)**
-**➡️ [Préparation des Données](documentation/DATALYSIS.md)**
+**➡️ [Documentation de la Préparation des Données](documentation/DATAPREP.md)**
+
+## 📈 Analyse Exploratoire (EDA)
+
+L'ensemble du processus de chargement, de nettoyage, de filtrage, de fusion et d'ingénierie des variables (feature engineering) est documenté en détail dans le fichier suivant :
+
+**➡️ [Documentation de l'Analyse des Données](documentation/DATALYSIS.md)**
