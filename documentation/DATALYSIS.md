@@ -1,9 +1,3 @@
-Sur cette page est expliquée la démarche que nous adoptons pour comprendre les données que nous avons entre les mains après les avoir nettoyées.
-
-L'objectif de cette analyse est d'explorer visuellement les données pour identifier les facteurs qui ont une influence sur la **gravité des accidents**. Pour chaque graphique, nous regroupons les données par catégorie (comme l'âge, la météo, ou la vitesse) et nous calculons le **pourcentage d'accidents graves** pour ce groupe. C'est cet indicateur de risque qui nous permet de faire des interprétations.
-
----
-
 ## 👴 Gravité par Âge du Conducteur
 
 Ce graphique montre la relation entre l'âge du conducteur et le risque qu'un accident soit grave.

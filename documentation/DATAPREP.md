@@ -1,4 +1,4 @@
-# 1\. 🏎️ Chargement et Optimisation des Données
+## 🏎️ Chargement et Optimisation des Données
 
 La première étape consiste à charger les données en optimisant l'utilisation de la mémoire, en ne sélectionnant que les colonnes utiles (`usecols`) et en spécifiant des types de données plus légers (`dtype`).
 
@@ -26,7 +26,7 @@ df_collision = pd.read_csv("data/collision.csv", usecols=collision_fields, dtype
 
 -----
 
-## 2\. 🤝 Fusion des Données
+## 🤝 Fusion des Données
 
 Les deux DataFrames (`df_vehicle` et `df_collision`) sont fusionnés en un seul DataFrame (`df`) en utilisant `collision_index` comme clé de jointure.
 
@@ -40,7 +40,7 @@ df = pd.merge(df_collision, df_vehicle, on="collision_index", how="inner")
 
 -----
 
-## 3\. 🧹 Nettoyage et Filtrage Initial
+## 🧹 Nettoyage et Filtrage Initial
 
 Un premier ensemble de filtres est appliqué pour nettoyer le jeu de données fusionné.
 
@@ -52,7 +52,7 @@ Un premier ensemble de filtres est appliqué pour nettoyer le jeu de données fu
 
 -----
 
-## 4\. 🔬 Ingénierie des Variables (Feature Engineering)
+## 🔬 Ingénierie des Variables (Feature Engineering)
 
 Plusieurs colonnes sont transformées pour les rendre exploitables par un modèle.
 
@@ -111,7 +111,7 @@ df.collision_severity = (df.collision_severity != 3).astype("int8")
 
 -----
 
-## 5\. 🗑️ Filtrage Final et Finalisation
+## 🗑️ Filtrage Final et Finalisation
 
 Des filtres supplémentaires sont appliqués pour exclure les données non pertinentes ou inconnues.
 
@@ -129,7 +129,7 @@ df = df.drop(columns=["date", "collision_index", "local_authority_ons_district"]
 
 -----
 
-## 6\. 💾 Export
+## 💾 Export
 
 Le DataFrame final, nettoyé et transformé, est sauvegardé au format **Parquet**. Ce format est optimisé pour le stockage et la lecture rapide des données analytiques.
 
