@@ -184,6 +184,23 @@ L'analyse exploratoire complète, incluant 6 visualisations détaillées et leur
 
 ---
 
+## 🤖 Modélisation et Résultats
+
+Une phase d'entraînement rigoureuse a été menée sur trois algorithmes de classification pour déterminer le modèle le plus performant.
+
+L'analyse détaillée des performances, incluant les matrices de confusion, les courbes ROC et l'importance des variables pour chaque modèle (XGBoost, CatBoost, Decision Tree), est disponible dans le rapport suivant :
+
+**➡️ [Rapport Complet d'Entraînement et Analyse](documentation/MLRESULT.md)**
+
+### Synthèse des Performances
+Après optimisation des hyperparamètres (GridSearch) et validation croisée :
+
+1.  🏆 **XGBoost** : Modèle retenu pour sa meilleure combinaison de performance (AUC: 0.6264) et de rapidité d'entraînement.
+2.  🥈 **CatBoost** : Très performant mais coûteux en temps de calcul.
+3.  🥉 **Decision Tree** : Sert de point de référence (Baseline), moins robuste que les méthodes de boosting.
+
+---
+
 ## 📚 Documentation Technique
 
 Ce projet suit une approche de **documentation exhaustive** pour assurer la reproductibilité et la maintenabilité :
@@ -193,22 +210,28 @@ Ce projet suit une approche de **documentation exhaustive** pour assurer la repr
 | **README.md** (ce fichier) | Vue d'ensemble, contexte, architecture | 👥 Tous |
 | **[DATAPREP.md](documentation/DATAPREP.md)** | Preprocessing détaillé avec justifications | 🔧 Data Engineers, Data Scientists |
 | **[DATALYSIS.md](documentation/DATALYSIS.md)** | Analyse exploratoire et visualisations | 📊 Data Analysts, Business |
+| **[MLRESULT.md](documentation/MLRESULT.md)** | Résultats d'entraînement et analyse des modèles | 🤖 Data Scientists, ML Engineers |
 | **data_doc.xlsx** | Dictionnaire des données sources | 📖 Référence technique |
 
 ---
 
-## 🛠️ Technologies Utilisées
+## 🛠️ Technologies et Packages Utilisés
 
-### Core Stack
-- **Python 3.8+** : Langage principal
-- **Pandas** : Manipulation des données
-- **NumPy** : Calculs numériques
-- **Scikit-learn** : Preprocessing et modélisation
+### Core & Data Processing
+- **Python 3.8+** : Environnement d'exécution
+- **Pandas** : Manipulation et nettoyage des DataFrames
+- **NumPy** : Opérations vectorielles et calculs numériques
+- **Scikit-learn** : Pipelines de preprocessing (OneHotEncoder), métriques et validation croisée
+
+### Modélisation (Machine Learning)
+- **XGBoost** : Algorithme de Gradient Boosting optimisé (Modèle Champion)
+- **CatBoost** : Algorithme de Boosting gérant nativement les catégories
+- **Decision Tree (sklearn)** : Modèle de base pour comparaison
 
 ### Visualisation
-- **Matplotlib** : Graphiques statiques
-- **Seaborn** : Visualisations statistiques
-- **Plotly** : Graphiques interactifs (treemaps)
+- **Matplotlib** : Création de graphiques statiques de base
+- **Seaborn** : Visualisations statistiques avancées (Heatmaps, Lineplots)
+- **Plotly Express** : Visualisations interactives (Treemaps)
 
-### Storage
-- **Parquet** : Format optimisé pour le stockage
+### Stockage et Performance
+- **Parquet (pyarrow/fastparquet)** : Format de fichier en colonne pour un stockage compressé et une lecture rapide
