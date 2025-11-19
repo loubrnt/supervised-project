@@ -269,11 +269,20 @@ def generate_plots(dataset: pd.DataFrame):
     plt.savefig("pictures/hour.png", bbox_inches="tight")
     plt.close()
 
-def plot_confusion_matrix(y_test_proba, y_test, threshold=0.5):
+def plot_confusion_matrix(y_test_proba, y_test, img_path, threshold=0.5):
     y_pred_threshold = (y_test_proba >= threshold).astype(int)
     cm = confusion_matrix(y_test, y_pred_threshold)
 
-    fig, ax = plt.subplots(figsize=(7, 6), dpi=200)
+    print("Confusion Matrix:")
+    print(cm)
+    print(f"Threshold used: {threshold}")
+    print(f"Class labels: ['Négatif', 'Positif']")
+    print(f"True Negatives: {cm[0, 0]}")
+    print(f"False Positives: {cm[0, 1]}")
+    print(f"False Negatives: {cm[1, 0]}")
+    print(f"True Positives: {cm[1, 1]}")
+
+    fig, ax = plt.subplots(figsize=(7, 6), dpi=500)
     im = ax.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
     ax.figure.colorbar(im, ax=ax)
 
@@ -294,13 +303,15 @@ def plot_confusion_matrix(y_test_proba, y_test, threshold=0.5):
     ax.grid(False)
 
     plt.tight_layout()
-    plt.show()
+    plt.tight_layout()
+    plt.savefig(f"pictures/{img_path}_confusion_matrix.png")
+    plt.close()
 
 def plot_precision_recall_curve(y_pred_proba, y_test, path):
     precision, recall, thresholds_pr = precision_recall_curve(y_test, y_pred_proba)
     auc_pr = auc(recall, precision)
     
-    plt.figure(figsize=(7, 6), dpi=200)
+    plt.figure(figsize=(7, 6), dpi=500)
     plt.plot(recall, precision, color='#FF6B35', linewidth=2.5, label=f'AUC-PR = {auc_pr:.4f}')
     plt.fill_between(recall, precision, color='#FF6B35', alpha=0.1)
     plt.xlabel('Rappel', fontsize=13)
@@ -313,14 +324,14 @@ def plot_precision_recall_curve(y_pred_proba, y_test, path):
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.tight_layout()
-    plt.savefig(f"pictures/{path}/features_importance.png")
+    plt.savefig(f"pictures/{path}_precision_recall.png")
     plt.close()
 
 def plot_roc_curve(y_pred_proba, y_test, path):
     fpr, tpr, thresholds_roc = roc_curve(y_test, y_pred_proba)
     auc_roc = auc(fpr, tpr)
     
-    plt.figure(figsize=(7, 6), dpi=200)
+    plt.figure(figsize=(7, 6), dpi=500)
     plt.plot(fpr, tpr, color='#2A9D8F', linewidth=2.5, label=f'AUC-ROC = {auc_roc:.4f}')
     plt.plot([0, 1], [0, 1], color='gray', linestyle='--', linewidth=1)
     plt.fill_between(fpr, tpr, color='#2A9D8F', alpha=0.1)
@@ -334,7 +345,7 @@ def plot_roc_curve(y_pred_proba, y_test, path):
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.tight_layout()
-    plt.savefig(f"pictures/{path}/features_importance.png")
+    plt.savefig(f"pictures/{path}_roc_curve.png")
     plt.close()
 
 def plot_feature_importance(model, feature_names, path, top_n=20):
@@ -344,12 +355,16 @@ def plot_feature_importance(model, feature_names, path, top_n=20):
     selected_features = [feature_names[i] for i in indices]
     selected_importance = importance[indices]
 
-    plt.figure(figsize=(10, 8), dpi=200)
+    print("Top features and their importance values:")
+    for i, (feature, imp) in enumerate(zip(selected_features, selected_importance), 1):
+        print(f"{i:2d}. {feature:<30} {imp:.6f}")
+
+    plt.figure(figsize=(10, 8), dpi=500)
     plt.barh(range(len(selected_importance)), selected_importance, color='#1f77b4')
     plt.yticks(range(len(selected_importance)), selected_features)
     plt.gca().invert_yaxis()
     plt.xlabel('Importance', fontsize=12)
     plt.title(f'Top {top_n} Features les plus importants', fontsize=14)
     plt.tight_layout()
-    plt.savefig(f"pictures/{path}/features_importance.png")
+    plt.savefig(f"pictures/{path}_features_importance.png")
     plt.close()
