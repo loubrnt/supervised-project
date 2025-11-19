@@ -6,29 +6,29 @@ L'objectif principal de ce projet est de développer un modèle de machine learn
 
 L'enjeu est de pouvoir déterminer quasi-instantanément si un accident venant de se produire nécessite une intervention d'urgence prioritaire (classé comme **Grave**, c'est-à-dire fatal ou sérieux) ou s'il est **Léger**.
 
-## 📊 Source des Données
+## 📊 Source et Périmètre des Données
 
 Pour entraîner ce modèle, nous utilisons l'ensemble des données ouvertes sur la sécurité routière (Road Safety Data) fournies par le gouvernement britannique.
 
 * **Source officielle** : [https://www.gov.uk/government/statistics/road-safety-data](https://www.gov.uk/government/statistics/road-safety-data)
 
 Ce jeu de données complet est historiquement divisé en trois fichiers principaux :
-* `collision.csv` : Détails sur les circonstances de l'accident (météo, conditions de route, localisation, etc.).
-* `vehicle.csv` : Détails sur les véhicules impliqués (type, âge, propulsion, etc.).
-* `casualty.csv` : Détails sur les victimes (âge, sexe, gravité de la blessure).
+* `collision.csv` : Détails sur les circonstances de l'accident (météo, conditions de route, localisation, heure, etc.).
+* `vehicle.csv` : Détails sur les véhicules impliqués (type, âge, propulsion, sexe du conducteur, etc.).
+* `casualty.csv` : Détails sur les victimes. Ce fichier n'est pas utilisé pour éviter toute fuite de données (data leakage) concernant l'issue de l'accident.
 
-Pour ce projet, nous utilisons uniquement les fichiers **`collision.csv`** et **`vehicle.csv`**. Le fichier `casualty.csv` n'est pas utilisé car il contient des informations sur l'issue de l'accident, ce qui constituerait une fuite de données (data leakage) pour notre objectif de prédiction *à l'avance*.
-
-> **Périmètre Géographique** : Bien que les données couvrent l'ensemble du Royaume-Uni (UK), notre analyse se concentre **exclusivement sur les accidents survenus en Angleterre**. Les données relatives à l'Écosse et au Pays de Galles sont filtrées lors de la préparation des données (basé sur les codes d'autorité locale commençant par "E").
+> **Périmètre de l'Étude** :
+> * **Géographie** : Angleterre uniquement (codes district commençant par "E").
+> * **Véhicules** : L'analyse se concentre **exclusivement sur les voitures**. Les deux-roues, poids lourds et autres véhicules sont exclus pour homogénéiser les données d'entrée.
 
 ## 🛠️ Préparation des Données
 
-L'ensemble du processus de chargement, de nettoyage, de filtrage, de fusion et d'ingénierie des variables (feature engineering) est documenté en détail dans le fichier suivant :
+Le pipeline de données a été mis à jour pour inclure une extraction temporelle précise (heure) et des filtres stricts sur l'âge des conducteurs et des véhicules.
 
 **➡️ [Documentation de la Préparation des Données](documentation/DATAPREP.md)**
 
 ## 📈 Analyse Exploratoire (EDA)
 
-L'ensemble du processus de chargement, de nettoyage, de filtrage, de fusion et d'ingénierie des variables (feature engineering) est documenté en détail dans le fichier suivant :
+L'analyse inclut désormais une étude croisée de l'heure et du jour de la semaine pour identifier les moments les plus accidentogènes.
 
 **➡️ [Documentation de l'Analyse des Données](documentation/DATALYSIS.md)**
