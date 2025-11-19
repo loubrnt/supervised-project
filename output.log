@@ -1,0 +1,107 @@
+/Users/loubrunet/Desktop/SUPERVISED/utils/data_loader.py:63: DtypeWarning: Columns (15) have mixed types. Specify dtype option on import or set low_memory=False.
+  df_collision = pd.read_csv(
+<class 'pandas.core.frame.DataFrame'>
+Index: 4839131 entries, 91279 to 16099145
+Data columns (total 12 columns):
+ #   Column               Dtype
+---  ------               -----
+ 0   collision_severity   int8 
+ 1   road_type            int8 
+ 2   speed_limit          int8 
+ 3   light_conditions     int8 
+ 4   weather_conditions   int8 
+ 5   urban_or_rural_area  int8 
+ 6   sex_of_driver        int8 
+ 7   age_of_driver        int8 
+ 8   age_of_vehicle       int8 
+ 9   day                  int8 
+ 10  month                int8 
+ 11  hour                 int8 
+dtypes: int8(12)
+memory usage: 92.3 MB
+None
+Main Dataframe loaded and cleaned.
+Main Dataframe saved in the following path: data/clean_dataset.parquet
+Plots generated and saved in ./pictures.
+Dataframe as successfully been time encoded using sin-cos transform.
+Démarrage de l'entraînement du classifieur XGBoost avec GridSearchCV
+Poids de la classe positive : 6.0414
+Initialisation de StratifiedKFold avec 5 plis
+Lancement de la recherche par grille...
+Fitting 5 folds for each of 3 candidates, totalling 15 fits
+Temps d'entraînement : 76.09 secondes
+Recherche par grille terminée
+Meilleurs paramètres : {'n_estimators': 50}
+Meilleur score CV : 0.6260
+Sauvegarde de la matrice de confusion
+Confusion Matrix:
+[[537438 293051]
+ [ 63833  73505]]
+Threshold used: 0.5
+Class labels: ['Négatif', 'Positif']
+True Negatives: 537438
+False Positives: 293051
+False Negatives: 63833
+True Positives: 73505
+Sauvegarde de la courbe ROC
+Sauvegarde des features importances
+Top features and their importance values:
+ 1. urban_or_rural_area_1          0.257286
+ 2. road_type_6                    0.213463
+ 3. light_conditions               0.085696
+ 4. road_type_1                    0.071661
+ 5. road_type_3                    0.071391
+ 6. sex_of_driver_1                0.051003
+ 7. speed_limit                    0.048659
+ 8. hour_cos                       0.037217
+ 9. weather_conditions_1           0.035796
+10. age_of_driver                  0.019527
+11. hour_sin                       0.017093
+12. weather_conditions_2           0.015524
+13. weather_conditions_7           0.009976
+14. day_sin                        0.009291
+15. weather_conditions_4           0.009169
+16. age_of_vehicle                 0.006925
+17. weather_conditions_3           0.006621
+18. day_cos                        0.006140
+19. month_cos                      0.005763
+20. road_type_7                    0.004620
+Processus d'entraînement du classifieur XGBoost avec GridSearch achevé
+Démarrage de l'entraînement du classifieur Decision Tree avec GridSearchCV
+Grille de paramètres définie avec 90 combinaisons possibles
+Poids de la classe positive : 6.0414
+Initialisation de StratifiedKFold avec 5 plis
+Lancement de la recherche par grille...
+Fitting 5 folds for each of 90 candidates, totalling 450 fits
+Traceback (most recent call last):
+  File "/Users/loubrunet/Desktop/SUPERVISED/main.py", line 21, in <module>
+    decision_tree_model = models.decision_tree.train_and_save_results(df_one_hot_time_encoded)
+  File "/Users/loubrunet/Desktop/SUPERVISED/models/decision_tree.py", line 45, in train_and_save_results
+    grid_search.fit(X_train, y_train)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/sklearn/base.py", line 1365, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/sklearn/model_selection/_search.py", line 1051, in fit
+    self._run_search(evaluate_candidates)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/sklearn/model_selection/_search.py", line 1605, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/sklearn/model_selection/_search.py", line 997, in evaluate_candidates
+    out = parallel(
+        delayed(_fit_and_score)(
+    ...<13 lines>...
+        )
+    )
+  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/sklearn/utils/parallel.py", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/joblib/parallel.py", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/joblib/parallel.py", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/joblib/parallel.py", line 1800, in _retrieve
+    time.sleep(0.01)
+    ~~~~~~~~~~^^^^^^
+KeyboardInterrupt
