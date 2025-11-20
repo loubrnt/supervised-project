@@ -28,44 +28,228 @@ Démarrage de l'entraînement du classifieur XGBoost avec GridSearchCV
 Poids de la classe positive : 6.0414
 Initialisation de StratifiedKFold avec 5 plis
 Lancement de la recherche par grille...
-Fitting 5 folds for each of 3 candidates, totalling 15 fits
-Temps d'entraînement : 76.09 secondes
+Fitting 5 folds for each of 36 candidates, totalling 180 fits
+[CV] END ...learning_rate=0.01, max_depth=3, n_estimators=50; total time=   6.3s
+[CV] END ...learning_rate=0.01, max_depth=3, n_estimators=50; total time=   6.3s
+[CV] END ...learning_rate=0.01, max_depth=3, n_estimators=50; total time=   6.4s
+[CV] END ...learning_rate=0.01, max_depth=3, n_estimators=50; total time=   6.5s
+[CV] END ...learning_rate=0.01, max_depth=3, n_estimators=50; total time=   5.9s
+[CV] END ..learning_rate=0.01, max_depth=3, n_estimators=100; total time=   9.2s
+[CV] END ..learning_rate=0.01, max_depth=3, n_estimators=100; total time=   9.3s
+[CV] END ..learning_rate=0.01, max_depth=3, n_estimators=100; total time=   9.2s
+[CV] END ..learning_rate=0.01, max_depth=3, n_estimators=100; total time=   9.1s
+[CV] END ..learning_rate=0.01, max_depth=3, n_estimators=100; total time=   9.1s
+[CV] END ..learning_rate=0.01, max_depth=3, n_estimators=200; total time=  15.8s
+[CV] END ..learning_rate=0.01, max_depth=3, n_estimators=200; total time=  15.9s
+[CV] END ..learning_rate=0.01, max_depth=3, n_estimators=200; total time=  15.8s
+[CV] END ...learning_rate=0.01, max_depth=5, n_estimators=50; total time=   7.3s
+[CV] END ..learning_rate=0.01, max_depth=3, n_estimators=200; total time=  15.8s
+[CV] END ...learning_rate=0.01, max_depth=5, n_estimators=50; total time=   6.4s
+[CV] END ...learning_rate=0.01, max_depth=5, n_estimators=50; total time=   6.3s
+[CV] END ..learning_rate=0.01, max_depth=3, n_estimators=200; total time=  14.4s
+[CV] END ...learning_rate=0.01, max_depth=5, n_estimators=50; total time=   6.3s
+[CV] END ...learning_rate=0.01, max_depth=5, n_estimators=50; total time=   6.3s
+[CV] END ..learning_rate=0.01, max_depth=5, n_estimators=100; total time=  11.5s
+[CV] END ..learning_rate=0.01, max_depth=5, n_estimators=100; total time=  11.3s
+[CV] END ..learning_rate=0.01, max_depth=5, n_estimators=100; total time=  11.5s
+[CV] END ..learning_rate=0.01, max_depth=5, n_estimators=100; total time=  11.7s
+[CV] END ..learning_rate=0.01, max_depth=5, n_estimators=100; total time=  11.8s
+[CV] END ..learning_rate=0.01, max_depth=5, n_estimators=200; total time=  21.6s
+[CV] END ..learning_rate=0.01, max_depth=5, n_estimators=200; total time=  21.8s
+[CV] END ..learning_rate=0.01, max_depth=5, n_estimators=200; total time=  21.7s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=50; total time=   7.4s
+[CV] END ..learning_rate=0.01, max_depth=5, n_estimators=200; total time=  21.1s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=50; total time=   7.3s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=50; total time=   7.4s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=50; total time=   7.4s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=50; total time=   7.4s
+[CV] END ..learning_rate=0.01, max_depth=5, n_estimators=200; total time=  20.2s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=100; total time=  13.1s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=100; total time=  12.8s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=100; total time=  12.9s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=100; total time=  12.9s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=100; total time=  13.0s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=200; total time=  24.4s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=200; total time=  24.1s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=200; total time=  24.5s
+[CV] END ....learning_rate=0.1, max_depth=3, n_estimators=50; total time=   4.8s
+[CV] END ....learning_rate=0.1, max_depth=3, n_estimators=50; total time=   4.6s
+[CV] END ....learning_rate=0.1, max_depth=3, n_estimators=50; total time=   4.5s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=200; total time=  24.4s
+[CV] END ....learning_rate=0.1, max_depth=3, n_estimators=50; total time=   4.6s
+[CV] END ....learning_rate=0.1, max_depth=3, n_estimators=50; total time=   4.6s
+[CV] END ...learning_rate=0.1, max_depth=3, n_estimators=100; total time=   7.2s
+[CV] END ...learning_rate=0.1, max_depth=3, n_estimators=100; total time=   7.2s
+[CV] END ...learning_rate=0.1, max_depth=3, n_estimators=100; total time=   7.3s
+[CV] END learning_rate=0.01, max_depth=None, n_estimators=200; total time=  23.5s
+[CV] END ...learning_rate=0.1, max_depth=3, n_estimators=100; total time=   7.3s
+[CV] END ...learning_rate=0.1, max_depth=3, n_estimators=100; total time=   7.3s
+[CV] END ...learning_rate=0.1, max_depth=3, n_estimators=200; total time=  12.5s
+[CV] END ...learning_rate=0.1, max_depth=3, n_estimators=200; total time=  12.3s
+[CV] END ...learning_rate=0.1, max_depth=3, n_estimators=200; total time=  12.3s
+[CV] END ...learning_rate=0.1, max_depth=3, n_estimators=200; total time=  12.4s
+[CV] END ....learning_rate=0.1, max_depth=5, n_estimators=50; total time=   6.3s
+[CV] END ....learning_rate=0.1, max_depth=5, n_estimators=50; total time=   6.2s
+[CV] END ....learning_rate=0.1, max_depth=5, n_estimators=50; total time=   6.2s
+[CV] END ...learning_rate=0.1, max_depth=3, n_estimators=200; total time=  12.4s
+[CV] END ....learning_rate=0.1, max_depth=5, n_estimators=50; total time=   6.1s
+[CV] END ....learning_rate=0.1, max_depth=5, n_estimators=50; total time=   6.4s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=100; total time=  10.6s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=100; total time=  10.5s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=100; total time=  10.7s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=100; total time=  10.6s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=100; total time=  10.5s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=200; total time=  18.5s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=200; total time=  18.5s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=200; total time=  18.8s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=200; total time=  18.9s
+[CV] END .learning_rate=0.1, max_depth=None, n_estimators=50; total time=   8.0s
+[CV] END .learning_rate=0.1, max_depth=None, n_estimators=50; total time=   7.7s
+[CV] END .learning_rate=0.1, max_depth=None, n_estimators=50; total time=   8.4s
+[CV] END .learning_rate=0.1, max_depth=None, n_estimators=50; total time=   8.3s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=200; total time=  20.1s
+[CV] END .learning_rate=0.1, max_depth=None, n_estimators=50; total time=   8.5s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=100; total time=  12.6s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=100; total time=  12.9s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=100; total time=  12.8s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=100; total time=  12.8s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=100; total time=  13.6s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=200; total time=  24.3s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=200; total time=  24.5s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=200; total time=  24.9s
+[CV] END ....learning_rate=0.2, max_depth=3, n_estimators=50; total time=   5.6s
+[CV] END ....learning_rate=0.2, max_depth=3, n_estimators=50; total time=   5.6s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=200; total time=  24.3s
+[CV] END ....learning_rate=0.2, max_depth=3, n_estimators=50; total time=   5.2s
+[CV] END ....learning_rate=0.2, max_depth=3, n_estimators=50; total time=   5.2s
+[CV] END ....learning_rate=0.2, max_depth=3, n_estimators=50; total time=   5.0s
+[CV] END ...learning_rate=0.2, max_depth=3, n_estimators=100; total time=   7.8s
+[CV] END ...learning_rate=0.2, max_depth=3, n_estimators=100; total time=   7.7s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=200; total time=  22.8s
+[CV] END ...learning_rate=0.2, max_depth=3, n_estimators=100; total time=   8.0s
+[CV] END ...learning_rate=0.2, max_depth=3, n_estimators=100; total time=   7.4s
+[CV] END ...learning_rate=0.2, max_depth=3, n_estimators=100; total time=   7.7s
+[CV] END ...learning_rate=0.2, max_depth=3, n_estimators=200; total time=  13.8s
+[CV] END ...learning_rate=0.2, max_depth=3, n_estimators=200; total time=  13.6s
+[CV] END ...learning_rate=0.2, max_depth=3, n_estimators=200; total time=  13.8s
+[CV] END ...learning_rate=0.2, max_depth=3, n_estimators=200; total time=  13.5s
+[CV] END ....learning_rate=0.2, max_depth=5, n_estimators=50; total time=   6.1s
+[CV] END ....learning_rate=0.2, max_depth=5, n_estimators=50; total time=   5.9s
+[CV] END ....learning_rate=0.2, max_depth=5, n_estimators=50; total time=   5.9s
+[CV] END ...learning_rate=0.2, max_depth=3, n_estimators=200; total time=  12.4s
+[CV] END ....learning_rate=0.2, max_depth=5, n_estimators=50; total time=   6.1s
+[CV] END ....learning_rate=0.2, max_depth=5, n_estimators=50; total time=   5.9s
+[CV] END ...learning_rate=0.2, max_depth=5, n_estimators=100; total time=   9.7s
+[CV] END ...learning_rate=0.2, max_depth=5, n_estimators=100; total time=   9.6s
+[CV] END ...learning_rate=0.2, max_depth=5, n_estimators=100; total time=   9.8s
+[CV] END ...learning_rate=0.2, max_depth=5, n_estimators=100; total time=   9.9s
+[CV] END ...learning_rate=0.2, max_depth=5, n_estimators=100; total time=   9.9s
+[CV] END ...learning_rate=0.2, max_depth=5, n_estimators=200; total time=  17.5s
+[CV] END ...learning_rate=0.2, max_depth=5, n_estimators=200; total time=  17.5s
+[CV] END ...learning_rate=0.2, max_depth=5, n_estimators=200; total time=  17.3s
+[CV] END .learning_rate=0.2, max_depth=None, n_estimators=50; total time=   6.7s
+[CV] END ...learning_rate=0.2, max_depth=5, n_estimators=200; total time=  17.4s
+[CV] END .learning_rate=0.2, max_depth=None, n_estimators=50; total time=   6.7s
+[CV] END .learning_rate=0.2, max_depth=None, n_estimators=50; total time=   6.5s
+[CV] END .learning_rate=0.2, max_depth=None, n_estimators=50; total time=   6.5s
+[CV] END ...learning_rate=0.2, max_depth=5, n_estimators=200; total time=  17.0s
+[CV] END .learning_rate=0.2, max_depth=None, n_estimators=50; total time=   6.6s
+[CV] END learning_rate=0.2, max_depth=None, n_estimators=100; total time=  10.9s
+[CV] END learning_rate=0.2, max_depth=None, n_estimators=100; total time=  10.8s
+/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/joblib/externals/loky/process_executor.py:782: UserWarning:
+
+A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+
+[CV] END learning_rate=0.2, max_depth=None, n_estimators=100; total time=  10.7s
+[CV] END learning_rate=0.2, max_depth=None, n_estimators=100; total time=  10.6s
+[CV] END learning_rate=0.2, max_depth=None, n_estimators=100; total time=  10.8s
+[CV] END learning_rate=0.2, max_depth=None, n_estimators=200; total time=  19.4s
+[CV] END learning_rate=0.2, max_depth=None, n_estimators=200; total time=  19.1s
+[CV] END learning_rate=0.2, max_depth=None, n_estimators=200; total time=  19.3s
+[CV] END ....learning_rate=0.5, max_depth=3, n_estimators=50; total time=   4.6s
+[CV] END ....learning_rate=0.5, max_depth=3, n_estimators=50; total time=   4.4s
+[CV] END learning_rate=0.2, max_depth=None, n_estimators=200; total time=  19.4s
+[CV] END ....learning_rate=0.5, max_depth=3, n_estimators=50; total time=   4.4s
+[CV] END ....learning_rate=0.5, max_depth=3, n_estimators=50; total time=   4.5s
+[CV] END ....learning_rate=0.5, max_depth=3, n_estimators=50; total time=   4.5s
+[CV] END ...learning_rate=0.5, max_depth=3, n_estimators=100; total time=   7.3s
+[CV] END ...learning_rate=0.5, max_depth=3, n_estimators=100; total time=   7.5s
+[CV] END ...learning_rate=0.5, max_depth=3, n_estimators=100; total time=   7.9s
+[CV] END learning_rate=0.2, max_depth=None, n_estimators=200; total time=  20.6s
+[CV] END ...learning_rate=0.5, max_depth=3, n_estimators=100; total time=   7.7s
+[CV] END ...learning_rate=0.5, max_depth=3, n_estimators=100; total time=   7.8s
+[CV] END ...learning_rate=0.5, max_depth=3, n_estimators=200; total time=  12.7s
+[CV] END ...learning_rate=0.5, max_depth=3, n_estimators=200; total time=  12.7s
+[CV] END ...learning_rate=0.5, max_depth=3, n_estimators=200; total time=  12.7s
+[CV] END ...learning_rate=0.5, max_depth=3, n_estimators=200; total time=  12.8s
+[CV] END ....learning_rate=0.5, max_depth=5, n_estimators=50; total time=   5.8s
+[CV] END ....learning_rate=0.5, max_depth=5, n_estimators=50; total time=   5.9s
+[CV] END ....learning_rate=0.5, max_depth=5, n_estimators=50; total time=   5.8s
+[CV] END ....learning_rate=0.5, max_depth=5, n_estimators=50; total time=   5.6s
+[CV] END ...learning_rate=0.5, max_depth=3, n_estimators=200; total time=  12.4s
+[CV] END ....learning_rate=0.5, max_depth=5, n_estimators=50; total time=   5.8s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=100; total time=   9.6s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=100; total time=   9.6s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=100; total time=   9.7s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=100; total time=   9.7s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=100; total time=   9.3s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=200; total time=  16.8s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=200; total time=  16.7s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=200; total time=  16.8s
+[CV] END .learning_rate=0.5, max_depth=None, n_estimators=50; total time=   6.4s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=200; total time=  16.8s
+[CV] END .learning_rate=0.5, max_depth=None, n_estimators=50; total time=   6.5s
+[CV] END .learning_rate=0.5, max_depth=None, n_estimators=50; total time=   6.5s
+[CV] END .learning_rate=0.5, max_depth=None, n_estimators=50; total time=   6.2s
+[CV] END .learning_rate=0.5, max_depth=None, n_estimators=50; total time=   6.2s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=200; total time=  16.3s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=100; total time=  11.2s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=100; total time=  11.2s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=100; total time=  11.2s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=100; total time=  11.2s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=100; total time=  11.2s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=200; total time=  19.8s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=200; total time=  19.7s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=200; total time=  20.0s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=200; total time=  16.9s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=200; total time=  13.6s
+Temps d'entraînement : 532.77 secondes
 Recherche par grille terminée
-Meilleurs paramètres : {'n_estimators': 50}
-Meilleur score CV : 0.6260
+Meilleurs paramètres : {'learning_rate': 0.1, 'max_depth': None, 'n_estimators': 200}
+Meilleur score CV : 0.6264
 Sauvegarde de la matrice de confusion
 Confusion Matrix:
-[[537438 293051]
- [ 63833  73505]]
+[[537358 293131]
+ [ 63786  73552]]
 Threshold used: 0.5
 Class labels: ['Négatif', 'Positif']
-True Negatives: 537438
-False Positives: 293051
-False Negatives: 63833
-True Positives: 73505
+True Negatives: 537358
+False Positives: 293131
+False Negatives: 63786
+True Positives: 73552
 Sauvegarde de la courbe ROC
 Sauvegarde des features importances
 Top features and their importance values:
- 1. urban_or_rural_area_1          0.257286
- 2. road_type_6                    0.213463
- 3. light_conditions               0.085696
- 4. road_type_1                    0.071661
- 5. road_type_3                    0.071391
- 6. sex_of_driver_1                0.051003
- 7. speed_limit                    0.048659
- 8. hour_cos                       0.037217
- 9. weather_conditions_1           0.035796
-10. age_of_driver                  0.019527
-11. hour_sin                       0.017093
-12. weather_conditions_2           0.015524
-13. weather_conditions_7           0.009976
-14. day_sin                        0.009291
-15. weather_conditions_4           0.009169
-16. age_of_vehicle                 0.006925
-17. weather_conditions_3           0.006621
-18. day_cos                        0.006140
-19. month_cos                      0.005763
-20. road_type_7                    0.004620
+ 1. road_type_6                    0.238592
+ 2. urban_or_rural_area_1          0.233130
+ 3. light_conditions               0.083233
+ 4. road_type_1                    0.072854
+ 5. sex_of_driver_1                0.070430
+ 6. speed_limit                    0.052543
+ 7. road_type_3                    0.047435
+ 8. weather_conditions_1           0.037194
+ 9. hour_cos                       0.033679
+10. age_of_driver                  0.020442
+11. hour_sin                       0.017821
+12. weather_conditions_2           0.016078
+13. weather_conditions_7           0.010176
+14. weather_conditions_4           0.008690
+15. day_sin                        0.007839
+16. weather_conditions_3           0.007323
+17. day_cos                        0.006840
+18. age_of_vehicle                 0.006493
+19. month_cos                      0.005475
+20. road_type_2                    0.004339
 Processus d'entraînement du classifieur XGBoost avec GridSearch achevé
 Démarrage de l'entraînement du classifieur Decision Tree avec GridSearchCV
 Grille de paramètres définie avec 90 combinaisons possibles
@@ -73,35 +257,575 @@ Poids de la classe positive : 6.0414
 Initialisation de StratifiedKFold avec 5 plis
 Lancement de la recherche par grille...
 Fitting 5 folds for each of 90 candidates, totalling 450 fits
-Traceback (most recent call last):
-  File "/Users/loubrunet/Desktop/SUPERVISED/main.py", line 21, in <module>
-    decision_tree_model = models.decision_tree.train_and_save_results(df_one_hot_time_encoded)
-  File "/Users/loubrunet/Desktop/SUPERVISED/models/decision_tree.py", line 45, in train_and_save_results
-    grid_search.fit(X_train, y_train)
-    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/sklearn/base.py", line 1365, in wrapper
-    return fit_method(estimator, *args, **kwargs)
-  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/sklearn/model_selection/_search.py", line 1051, in fit
-    self._run_search(evaluate_candidates)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/sklearn/model_selection/_search.py", line 1605, in _run_search
-    evaluate_candidates(ParameterGrid(self.param_grid))
-    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/sklearn/model_selection/_search.py", line 997, in evaluate_candidates
-    out = parallel(
-        delayed(_fit_and_score)(
-    ...<13 lines>...
-        )
-    )
-  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/sklearn/utils/parallel.py", line 82, in __call__
-    return super().__call__(iterable_with_config_and_warning_filters)
-           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/joblib/parallel.py", line 2072, in __call__
-    return output if self.return_generator else list(output)
-                                                ~~~~^^^^^^^^
-  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/joblib/parallel.py", line 1682, in _get_outputs
-    yield from self._retrieve()
-  File "/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/joblib/parallel.py", line 1800, in _retrieve
-    time.sleep(0.01)
-    ~~~~~~~~~~^^^^^^
-KeyboardInterrupt
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=2; total time=   4.4s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=2; total time=   4.4s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=2; total time=   4.5s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=2; total time=   4.5s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=2; total time=   4.0s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=5; total time=   4.1s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=5; total time=   4.1s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=5; total time=   4.1s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=5; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=5; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=10; total time=   4.0s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=10; total time=   4.0s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=10; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=10; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=1, min_samples_split=10; total time=   4.0s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=2; total time=   4.0s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=2; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=2; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=2; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=2; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=5; total time=   3.7s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=5; total time=   3.7s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=5; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=5; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=5; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=10; total time=   4.0s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=10; total time=   4.0s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=10; total time=   4.0s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=10; total time=   3.7s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=2, min_samples_split=10; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=2; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=2; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=2; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=2; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=2; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=5; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=5; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=5; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=5; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=5; total time=   3.8s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=10; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=10; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=10; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=10; total time=   3.9s
+[CV] END criterion=gini, max_depth=3, min_samples_leaf=4, min_samples_split=10; total time=   3.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=2; total time=   5.9s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=2; total time=   5.9s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=2; total time=   5.9s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=2; total time=   5.9s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=2; total time=   5.8s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=5; total time=   5.8s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=5; total time=   5.8s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=5; total time=   5.8s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=5; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=5; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=10; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=10; total time=   5.9s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=10; total time=   5.8s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=10; total time=   5.9s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=1, min_samples_split=10; total time=   5.8s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=2; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=2; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=2; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=2; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=2; total time=   5.6s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=5; total time=   5.6s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=5; total time=   5.6s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=5; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=5; total time=   5.9s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=5; total time=   5.9s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=10; total time=   5.9s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=10; total time=   5.9s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=10; total time=   5.8s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=10; total time=   6.0s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=2, min_samples_split=10; total time=   6.0s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=2; total time=   6.0s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=2; total time=   6.0s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=2; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=2; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=2; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=5; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=5; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=5; total time=   5.6s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=5; total time=   5.6s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=5; total time=   5.7s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=10; total time=   5.9s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=10; total time=   6.1s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=10; total time=   6.1s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=10; total time=   7.0s
+[CV] END criterion=gini, max_depth=5, min_samples_leaf=4, min_samples_split=10; total time=   7.0s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=2; total time=   9.1s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=2; total time=   9.0s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=2; total time=   8.5s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=2; total time=   8.3s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=2; total time=   8.3s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=5; total time=   8.3s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=5; total time=   8.1s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=5; total time=   8.0s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=5; total time=   7.8s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=5; total time=   7.9s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=10; total time=   8.0s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=10; total time=   8.0s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=10; total time=   8.6s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=10; total time=   8.7s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=1, min_samples_split=10; total time=   8.7s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=2; total time=   8.8s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=2; total time=   8.1s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=2; total time=   8.1s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=2; total time=   7.9s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=2; total time=   7.9s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=5; total time=   7.9s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=5; total time=   7.8s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=5; total time=   7.8s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=5; total time=   7.9s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=5; total time=   8.0s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=10; total time=   8.0s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=10; total time=   8.2s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=10; total time=   8.0s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=10; total time=   7.8s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=2, min_samples_split=10; total time=   7.8s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=2; total time=   8.0s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=2; total time=   8.5s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=2; total time=   9.6s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=2; total time=   9.6s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=2; total time=   9.6s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=5; total time=   9.0s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=5; total time=   8.5s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=5; total time=   8.4s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=5; total time=   8.3s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=5; total time=   8.2s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=10; total time=   8.2s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=10; total time=   8.1s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=10; total time=   8.3s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=10; total time=   8.6s
+[CV] END criterion=gini, max_depth=7, min_samples_leaf=4, min_samples_split=10; total time=   9.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=2; total time=  11.5s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=2; total time=  11.2s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=2; total time=  10.8s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=2; total time=  10.2s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=2; total time=  10.1s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=5; total time=  10.1s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=5; total time=  10.1s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=5; total time=  10.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=5; total time=  10.1s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=5; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=10; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=10; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=10; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=10; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=1, min_samples_split=10; total time=   9.8s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=2; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=2; total time=  10.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=2; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=2; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=2; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=5; total time=  10.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=5; total time=  10.1s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=5; total time=  10.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=5; total time=  10.1s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=5; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=10; total time=  10.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=10; total time=  10.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=10; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=10; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=2, min_samples_split=10; total time=   9.8s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=2; total time=  10.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=2; total time=  10.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=2; total time=  10.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=2; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=2; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=5; total time=  10.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=5; total time=  10.1s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=5; total time=  10.1s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=5; total time=  10.1s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=5; total time=  10.1s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=10; total time=  10.1s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=10; total time=  10.0s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=10; total time=   9.9s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=10; total time=   9.8s
+[CV] END criterion=gini, max_depth=10, min_samples_leaf=4, min_samples_split=10; total time=   9.7s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=2; total time=  18.8s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=2; total time=  18.8s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=2; total time=  19.1s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=2; total time=  19.2s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=2; total time=  19.7s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=5; total time=  19.4s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=5; total time=  18.8s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=5; total time=  18.5s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=5; total time=  18.2s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=5; total time=  18.2s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=10; total time=  18.0s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=10; total time=  17.9s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=10; total time=  17.6s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=10; total time=  17.7s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=1, min_samples_split=10; total time=  17.9s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=2; total time=  18.2s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=2; total time=  17.7s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=2; total time=  17.7s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=2; total time=  17.8s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=2; total time=  18.0s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=5; total time=  19.0s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=5; total time=  19.1s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=5; total time=  19.2s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=5; total time=  19.6s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=5; total time=  19.3s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=10; total time=  19.1s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=10; total time=  18.8s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=10; total time=  18.4s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=10; total time=  18.9s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=2, min_samples_split=10; total time=  18.9s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=2; total time=  19.0s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=2; total time=  18.9s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=2; total time=  18.9s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=2; total time=  19.2s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=2; total time=  19.6s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=5; total time=  19.9s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=5; total time=  19.3s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=5; total time=  19.3s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=5; total time=  19.4s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=5; total time=  19.0s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=10; total time=  19.3s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=10; total time=  18.9s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=10; total time=  18.5s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=2; total time=   3.9s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=10; total time=  18.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=2; total time=   4.1s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=2; total time=   4.0s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=2; total time=   4.0s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=2; total time=   4.0s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=5; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=5; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=5; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=5; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=5; total time=   3.8s
+[CV] END criterion=gini, max_depth=None, min_samples_leaf=4, min_samples_split=10; total time=  18.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=10; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=10; total time=   3.7s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=10; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=10; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=1, min_samples_split=10; total time=   4.0s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=2; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=2; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=2; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=2; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=2; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=5; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=5; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=5; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=5; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=5; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=10; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=10; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=10; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=10; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=2, min_samples_split=10; total time=   4.1s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=2; total time=   4.1s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=2; total time=   4.2s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=2; total time=   4.2s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=2; total time=   4.2s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=2; total time=   4.1s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=5; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=5; total time=   3.8s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=5; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=5; total time=   4.0s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=5; total time=   4.0s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=10; total time=   3.9s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=10; total time=   3.7s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=10; total time=   3.7s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=10; total time=   3.7s
+[CV] END criterion=entropy, max_depth=3, min_samples_leaf=4, min_samples_split=10; total time=   3.7s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=2; total time=   5.7s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=2; total time=   5.7s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=2; total time=   5.7s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=2; total time=   5.8s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=2; total time=   6.1s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=5; total time=   6.2s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=5; total time=   6.2s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=5; total time=   6.2s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=5; total time=   6.2s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=5; total time=   6.1s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=10; total time=   6.1s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=10; total time=   6.1s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=10; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=10; total time=   6.1s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=1, min_samples_split=10; total time=   5.9s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=2; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=2; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=2; total time=   5.9s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=2; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=2; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=5; total time=   6.1s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=5; total time=   6.2s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=5; total time=   6.1s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=5; total time=   6.1s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=5; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=10; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=10; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=10; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=10; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=2, min_samples_split=10; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=2; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=2; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=2; total time=   5.9s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=2; total time=   5.9s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=2; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=5; total time=   6.1s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=5; total time=   5.9s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=5; total time=   6.0s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=5; total time=   6.1s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=5; total time=   6.1s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=10; total time=   6.2s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=10; total time=   6.2s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=10; total time=   5.9s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=10; total time=   5.9s
+[CV] END criterion=entropy, max_depth=5, min_samples_leaf=4, min_samples_split=10; total time=   5.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=2; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=2; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=2; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=2; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=2; total time=   7.8s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=5; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=5; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=5; total time=   7.8s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=5; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=5; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=10; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=10; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=10; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=10; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=1, min_samples_split=10; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=2; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=2; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=2; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=2; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=2; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=5; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=5; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=5; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=5; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=5; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=10; total time=   7.8s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=10; total time=   7.8s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=10; total time=   7.8s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=10; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=2, min_samples_split=10; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=2; total time=   7.9s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=2; total time=   7.9s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=2; total time=   8.0s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=2; total time=   7.9s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=2; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=5; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=5; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=5; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=5; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=5; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=10; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=10; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=10; total time=   7.6s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=10; total time=   7.7s
+[CV] END criterion=entropy, max_depth=7, min_samples_leaf=4, min_samples_split=10; total time=   7.9s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=2; total time=  10.4s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=2; total time=  10.5s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=2; total time=  10.5s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=2; total time=  10.2s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=2; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=5; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=5; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=5; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=5; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=5; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=10; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=10; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=10; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=10; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=1, min_samples_split=10; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=2; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=2; total time=  10.3s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=2; total time=  10.3s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=2; total time=  10.5s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=2; total time=  10.4s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=5; total time=  10.3s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=5; total time=  10.4s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=5; total time=  10.4s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=5; total time=  10.6s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=5; total time=  10.5s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=10; total time=  10.5s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=10; total time=  10.3s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=10; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=10; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=2, min_samples_split=10; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=2; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=2; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=2; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=2; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=2; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=5; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=5; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=5; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=5; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=5; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=10; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=10; total time=  10.1s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=10; total time=  10.0s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=10; total time=   9.9s
+[CV] END criterion=entropy, max_depth=10, min_samples_leaf=4, min_samples_split=10; total time=   9.7s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=2; total time=  18.7s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=2; total time=  18.4s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=2; total time=  18.2s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=2; total time=  18.3s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=2; total time=  18.3s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=5; total time=  18.2s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=5; total time=  17.9s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=5; total time=  17.9s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=5; total time=  18.1s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=5; total time=  18.1s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=10; total time=  17.9s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=10; total time=  17.7s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=10; total time=  17.6s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=10; total time=  17.8s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=1, min_samples_split=10; total time=  17.7s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=2; total time=  18.2s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=2; total time=  17.9s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=2; total time=  17.9s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=2; total time=  18.0s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=2; total time=  17.9s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=5; total time=  18.1s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=5; total time=  17.8s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=5; total time=  17.8s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=5; total time=  18.0s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=5; total time=  17.9s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=10; total time=  17.8s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=10; total time=  17.5s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=10; total time=  17.6s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=10; total time=  17.7s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=2, min_samples_split=10; total time=  17.6s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=2; total time=  17.7s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=2; total time=  17.5s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=2; total time=  17.4s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=2; total time=  17.7s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=2; total time=  17.7s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=5; total time=  17.9s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=5; total time=  17.6s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=5; total time=  17.6s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=5; total time=  17.7s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=5; total time=  17.6s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=10; total time=  17.6s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=10; total time=  17.4s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=10; total time=  17.2s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=10; total time=  16.9s
+[CV] END criterion=entropy, max_depth=None, min_samples_leaf=4, min_samples_split=10; total time=  14.9s
+Temps d'entraînement : 1063.58 secondes
+Recherche par grille terminée
+Meilleurs paramètres : {'criterion': 'entropy', 'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 5}
+Meilleur score CV : 0.6193
+Sauvegarde de la matrice de confusion
+Confusion Matrix:
+[[551338 279151]
+ [ 67071  70267]]
+Threshold used: 0.5
+Class labels: ['Négatif', 'Positif']
+True Negatives: 551338
+False Positives: 279151
+False Negatives: 67071
+True Positives: 70267
+Sauvegarde de la courbe ROC
+Sauvegarde des features importances
+Top features and their importance values:
+ 1. urban_or_rural_area_1          0.241675
+ 2. light_conditions               0.130599
+ 3. road_type_6                    0.113867
+ 4. speed_limit                    0.096962
+ 5. age_of_driver                  0.089164
+ 6. hour_sin                       0.061821
+ 7. hour_cos                       0.060602
+ 8. road_type_1                    0.049134
+ 9. road_type_3                    0.040846
+10. sex_of_driver_2                0.034932
+11. weather_conditions_1           0.022771
+12. sex_of_driver_1                0.017509
+13. age_of_vehicle                 0.013137
+14. month_sin                      0.005528
+15. day_cos                        0.004533
+16. month_cos                      0.003708
+17. weather_conditions_7           0.003293
+18. day_sin                        0.002873
+19. weather_conditions_4           0.002444
+20. weather_conditions_2           0.001610
+Processus d'entraînement du classifieur Decision Tree avec GridSearch achevé
+
+Démarrage de l'entraînement du classifieur CatBoost avec GridSearchCV
+Grille de paramètres définie avec 8 combinaisons possibles
+Poids de la classe positive : 6.0414
+Initialisation de StratifiedKFold avec 5 plis
+Lancement de la recherche par grille...
+Fitting 5 folds for each of 8 candidates, totalling 40 fits
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=100; total time=  51.9s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=100; total time=  51.9s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=100; total time=  52.2s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=100; total time=  52.3s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=100; total time= 1.1min
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=200; total time= 4.1min
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=200; total time= 4.2min
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=200; total time= 4.2min
+/Users/loubrunet/miniconda3/envs/machine-learning/lib/python3.13/site-packages/joblib/externals/loky/process_executor.py:782: UserWarning:
+
+A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=200; total time= 3.9min
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=100; total time=  55.4s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=100; total time=  54.8s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=100; total time=  58.2s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=100; total time=  58.0s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=100; total time=  58.0s
+[CV] END ...learning_rate=0.1, max_depth=5, n_estimators=200; total time= 3.0min
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=200; total time= 4.5min
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=200; total time= 4.5min
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=200; total time= 4.5min
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=200; total time= 4.2min
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=100; total time=  52.7s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=100; total time=  52.0s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=100; total time=  50.2s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=100; total time=  50.4s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=100; total time=  50.4s
+[CV] END learning_rate=0.1, max_depth=None, n_estimators=200; total time= 3.5min
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=200; total time= 4.0min
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=200; total time= 4.1min
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=200; total time= 4.1min
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=100; total time= 1.0min
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=100; total time= 1.1min
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=200; total time= 3.7min
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=100; total time=  56.9s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=100; total time=  58.5s
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=100; total time=  56.0s
+[CV] END ...learning_rate=0.5, max_depth=5, n_estimators=200; total time= 3.4min
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=200; total time= 4.7min
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=200; total time= 4.8min
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=200; total time= 4.8min
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=200; total time= 4.1min
+[CV] END learning_rate=0.5, max_depth=None, n_estimators=200; total time= 1.6min
+Temps d'entraînement : 1643.12 secondes
+Recherche par grille terminée
+Meilleurs paramètres : {'learning_rate': 0.1, 'max_depth': None, 'n_estimators': 200}
+Meilleur score CV : 0.6261
+Sauvegarde de la matrice de confusion
+Confusion Matrix:
+[[533111 297378]
+ [ 63170  74168]]
+Threshold used: 0.5
+Class labels: ['Négatif', 'Positif']
+True Negatives: 533111
+False Positives: 297378
+False Negatives: 63170
+True Positives: 74168
+Sauvegarde de la courbe ROC
+Sauvegarde des features importances
+Top features and their importance values:
+ 1. road_type                      25.614875
+ 2. speed_limit                    17.296582
+ 3. hour_cos                       12.968065
+ 4. light_conditions               9.356020
+ 5. age_of_driver                  8.695027
+ 6. hour_sin                       6.366607
+ 7. sex_of_driver                  5.558412
+ 8. urban_or_rural_area            5.506096
+ 9. weather_conditions             3.640322
+10. age_of_vehicle                 1.516078
+11. day_sin                        1.155213
+12. day_cos                        1.055697
+13. month_cos                      0.835712
+14. month_sin                      0.435293
+Processus d'entraînement du classifieur CatBoost avec GridSearch achevé
+(machine-learning) loubrunet@MacBook-Pro-de-Lou SUPERVISED % 
